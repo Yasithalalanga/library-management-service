@@ -1,7 +1,7 @@
 import ballerina/http;
 import ballerina/io;
 
-configurable string emailServiceUrl = "";
+configurable string emailServiceUrl = ?;
 
 # A service representing a network-accessible API
 # bound to port `9090`.
