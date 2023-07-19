@@ -1,7 +1,7 @@
 import ballerina/http;
 import ballerina/io;
 
-configurable string emailServiceUrl = "http://localhost:9000";
+configurable string emailServiceUrl = "";
 
 # A service representing a network-accessible API
 # bound to port `9090`.
@@ -27,7 +27,7 @@ service / on new http:Listener(9090) {
 
     resource function post books(@http:Payload Book book) returns Book|error {
         bookStore.add(book);
-        // Get /sendEmail?name=book.author
+
         string response = check self.emailServiceClient->/sendEmail(name = book.author);
         io:println(response);
         return book;

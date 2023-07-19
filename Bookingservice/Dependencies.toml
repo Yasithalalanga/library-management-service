@@ -8,20 +8,6 @@ dependencies-toml-version = "2"
 distribution-version = "2201.7.0"
 
 [[package]]
-org = "YasithaG"
-name = "Bookingservice"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "test"},
-	{org = "ballerinai", name = "observe"}
-]
-modules = [
-	{org = "YasithaG", packageName = "Bookingservice", moduleName = "Bookingservice"}
-]
-
-[[package]]
 org = "ballerina"
 name = "auth"
 version = "2.9.0"
@@ -317,5 +303,19 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerinai", packageName = "observe", moduleName = "observe"}
+]
+
+[[package]]
+org = "yasithaorg"
+name = "Bookingservice"
+version = "0.1.0"
+dependencies = [
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "test"},
+	{org = "ballerinai", name = "observe"}
+]
+modules = [
+	{org = "yasithaorg", packageName = "Bookingservice", moduleName = "Bookingservice"}
 ]
 
